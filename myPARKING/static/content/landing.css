@@ -1,0 +1,36 @@
+/* stylesheet for landing login page */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background:#FF7D21;
+}
+
+.width-centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.vertical-centered {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form-signin {
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#inputEmail {
+  position: relative;
+  height: auto;
+}

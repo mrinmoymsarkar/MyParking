@@ -1,0 +1,20 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="container width-centered">
+        <h1> myParking </h1>
+      </div>
+      <div class="container vertical-centered">
+        <form class="form-signin width-centered" action="/login/" method="post">
+          <h3> Login with your email </h3>
+          {% csrf_token %}
+          {% if next %}
+          <input type="hidden" name="next" value="{{ next }}" />
+          {% endif %}
+          <input type="username" class="form-control" placeholder="Username" id="inputEmail" name="username" value"{{ username }}">
+          <button type="submit" class="btn btn-primary" style="margin-top:10px;">Log In!</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Park</h1>
+    <p class="lead">Don't park like an idiot.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Blocking</h2>
+        <p>
+            Be nice.  Let them know you blocked them in.
+        </p>
+        <p><a class="btn btn-warning" href="/blocking/">Let them Know &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Blocked</h2>
+        <p>Let them know you're blocked</p>
+        <p><a class="btn btn-success" href="/blocked/">Get Unblocked &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

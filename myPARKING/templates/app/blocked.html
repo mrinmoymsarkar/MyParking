@@ -1,0 +1,20 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="container width-centered">
+        <h1> myParking </h1>
+      </div>
+      <div class="container vertical-centered">
+        <form class="width-centered" action="/blocked/" method="post">
+          <h3> The Last 3 Digits of their Plate </h3>
+          {% csrf_token %}
+          {% if next %}
+          <input type="hidden" name="next" value="{{ next }}" />
+          {% endif %}
+          <input type="text" class="form-control" placeholder="Last 3 License" id="inputLicense" name="license" value"{{ license }}">
+          <button type="submit" class="btn btn-primary" style="margin-top:10px;">Go</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% extends django_slack %}
+
+{% block text %}
+{{ blockee }} is blocking {{ blocked }}
+{% endblock %}

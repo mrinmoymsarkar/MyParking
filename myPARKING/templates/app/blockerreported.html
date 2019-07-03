@@ -1,0 +1,17 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="container width-centered">
+        <h1> Reach Out! </h1>
+      </div>
+      <div class="container vertical-centered">
+          <div class="col-md-4">
+          <h3> {{ username }} parked you in </h3>
+          <br/>
+          <h4>You can call them at {{ phonenumber }}</h4>
+          <h4>Or Email Them at {{ email }} </h4>
+          </div>
+      </div>
+    </div>
+{% endblock %}
